@@ -9,6 +9,20 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1vw; }
 
+img {
+  image-rendering: pixelated; }
+
+*::-webkit-scrollbar {
+  width: 1em; }
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+*::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 2px solid #0055AA;
+  border: 2px solid white; }
+
 #doc,
 #pref,
 #gall,
@@ -44,7 +58,8 @@ h2 {
         color: white; }
         html body main #infoBox,
         html body main #techBox,
-        html body main #imageBox {
+        html body main #imageBox,
+        html body main #helpBox {
           border: 4px solid white;
           display: flex;
           display: none;
@@ -58,7 +73,7 @@ h2 {
           html body main #text p {
             margin-left: 0; }
         html body main #imageBox {
-          right: 2vw;
+          right: 15vw;
           top: 6vh;
           max-width: 700px;
           max-height: 80vh;
@@ -76,8 +91,8 @@ h2 {
                 filter: grayscale(0%);
                 transition: 0.5s; }
         html body main #techBox {
-          right: 5vw;
-          top: 6vh;
+          right: 30vw;
+          top: 8vh;
           flex-wrap: wrap;
           justify-content: center;
           max-width: 500px;
@@ -118,8 +133,28 @@ h2 {
           html body main .techs button,
           html body main .gallery button,
           html body main .download button {
+            width: 100px;
+            height: 40px;
             cursor: url("../cursor/pointer.png"), auto;
             font-family: 'amiga'; }
+            html body main .about button:last-of-type,
+            html body main .techs button:last-of-type,
+            html body main .gallery button:last-of-type,
+            html body main .download button:last-of-type {
+              margin-bottom: 10px; }
+        html body main .help {
+          position: absolute;
+          right: 2vw;
+          top: 6vh;
+          text-align: center; }
+          html body main .help p {
+            margin: 0; }
+          html body main .help:hover #helpBox {
+            width: 30vw;
+            display: block;
+            padding: 20px;
+            right: 30vw;
+            top: 20vh; }
   .invert {
     filter: invert(100%); }
   .col-md-6,
@@ -157,7 +192,8 @@ h2 {
         color: white; }
         html body main #infoBox,
         html body main #techBox,
-        html body main #imageBox {
+        html body main #imageBox,
+        html body main #helpBox {
           border: 4px solid white;
           display: flex;
           display: none;
@@ -171,7 +207,7 @@ h2 {
           html body main #text p {
             margin-left: 0; }
         html body main #imageBox {
-          right: 2vw;
+          left: 13vw;
           top: 6vh;
           max-width: 700px;
           max-height: 80vh;
@@ -189,7 +225,7 @@ h2 {
                 filter: grayscale(0%);
                 transition: 0.5s; }
         html body main #techBox {
-          right: 5vw;
+          right: 20vw;
           top: 6vh;
           flex-wrap: wrap;
           justify-content: center;
@@ -232,7 +268,27 @@ h2 {
           html body main .gallery button,
           html body main .download button {
             cursor: url("../cursor/pointer.png"), auto;
-            font-family: 'amiga'; }
+            font-family: 'amiga';
+            width: 100px;
+            height: 40px; }
+            html body main .about button:last-of-type,
+            html body main .techs button:last-of-type,
+            html body main .gallery button:last-of-type,
+            html body main .download button:last-of-type {
+              margin-bottom: 10px; }
+        html body main .help {
+          position: absolute;
+          right: 2vw;
+          top: 6vh;
+          text-align: center; }
+          html body main .help p {
+            margin: 0; }
+          html body main .help:hover #helpBox {
+            width: 30vw;
+            display: block;
+            padding: 20px;
+            right: 30vw;
+            top: 20vh; }
   .invert {
     filter: invert(100%); }
   .col-md-6,
@@ -329,6 +385,8 @@ h2 {
             width: 15vw;
             height: 5vh;
             font-size: 3vw; }
+        html body main .help {
+          display: none; }
   .invert {
     filter: invert(100%); }
   .col-md-6,
