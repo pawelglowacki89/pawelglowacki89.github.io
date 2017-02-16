@@ -9,7 +9,7 @@ $(function() {
 	    document.getElementById('error').style.borderColor = 'black';
 	}, 1000);
 
-	$('html').dblclick(function() {
+	$('html').click(function() {
 		 window.location.href='main/index.html';
 	})
 });
