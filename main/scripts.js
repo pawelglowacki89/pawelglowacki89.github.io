@@ -46,7 +46,7 @@ $(function() {
 	$('#doc').dblclick(() => $('#infoBox').toggle(0, () => $('#techBox, #imageBox').hide()));
 	$('#gall').dblclick(() => $('#imageBox').toggle(0, () => $('#infoBox, #techBox').hide()));
 	$('#pref').dblclick(() => $('#techBox').toggle(0, () => $('#infoBox, #imageBox').hide()));
-	$('#get').dblclick(() => window.location = 'Curriculum Vitae Paweł Głowacki (front-end dev).pdf');
+	$('#get').dblclick(() => window.location = 'Paweł_Głowacki.CV.pdf');
 
 	$('#doc').click(function() {
 		$(this).toggleClass('invert');
