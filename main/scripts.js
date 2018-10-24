@@ -17,15 +17,15 @@ $(function() {
 
 	var linkMapper = {
 		'amiWeb': 'https://erosspl.github.io/amiga', 
-		'amiGit': 'https://github.com/erosspl/amiga',
+		'amiGit': 'https://github.com/pawelglowacki89/amiga',
 		'rpsWeb': 'https://erosspl.github.io/rps',
-		'rpsGit': 'https://github.com/erosspl/rps',
+		'rpsGit': 'https://github.com/pawelglowacki89/rps',
 		'countryWeb': 'https://erosspl.github.io/country',
-		'countryGit': 'https://github.com/erosspl/country',
+		'countryGit': 'https://github.com/pawelglowacki89/country',
 		'rwdWeb': 'https://erosspl.github.io/psd-rwd',
-		'rwdGit': 'https://github.com/erosspl/psd-rwd',
+		'rwdGit': 'https://github.com/pawelglowacki89/psd',
 		'weatherWeb': 'https://erosspl.github.io/weatherApp',
-		'weatherGit': 'https://github.com/erosspl/weatherApp'
+		'weatherGit': 'https://github.com/pawelglowacki89/weatherapp'
 	};
 
 	function mapEvents(mappedObject) {
